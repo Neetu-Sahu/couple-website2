@@ -2,7 +2,7 @@
 const memoryContainer = document.getElementById('memory-container');
 
 if (memoryContainer) {
-    fetch('http://localhost:3000/memories')
+    fetch('https://couple-website2-2.onrender.com')
     .then(res => res.json())
     .then(memories => {
         memories.forEach(mem => {
@@ -18,4 +18,5 @@ if (memoryContainer) {
         });
     })
     .catch(err => console.log(err));
+
 }
